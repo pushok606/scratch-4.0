@@ -1,0 +1,176 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Тёмный фон */
+    color: #ffffff; /* Белый текст */
+}
+
+/* Шапка */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d47a1; /* Тёмно-синий */
+    padding: 10px 20px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header .user-profile {
+    display: flex;
+    align-items: center;
+}
+
+header .user-profile img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Основной интерфейс */
+main {
+    display: flex;
+    height: calc(100vh - 70px);
+}
+
+/* Боковая панель с блоками и спрайтами */
+.sidebar {
+    width: 20%;
+    background-color: #1e1e1e; /* Тёмно-серый фон */
+    padding: 15px;
+    overflow-y: auto;
+    border-right: 1px solid #333; /* Тёмная граница */
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.block-category {
+    background-color: #0d47a1; /* Тёмно-синий */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sprite-item {
+    background-color: #1b5e20; /* Тёмно-зелёный */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sprite-item img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Рабочая область */
+.workspace {
+    width: 60%;
+    padding: 15px;
+    background-color: #2c2c2c; /* Тёмный фон */
+    overflow-y: auto;
+}
+
+.workspace h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.code-area {
+    border: 2px dashed #444; /* Тёмно-серая граница */
+    padding: 15px;
+    background-color: #1e1e1e; /* Тёмно-серый фон */
+    min-height: 300px;
+    border-radius: 5px;
+}
+
+.code-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block {
+    background-color: #303f9f; /* Тёмно-синий */
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: move;
+}
+
+.block.motion { background-color: #303f9f; }
+.block.looks { background-color: #d81b60; }
+.block.sound { background-color: #8e24aa; }
+.block.events { background-color: #fb8c00; }
+.block.ai { background-color: #00acc1; }
+.block.graphics { background-color: #00796b; }
+
+/* Сцена */
+.stage {
+    width: 20%;
+    padding: 15px;
+    background-color: #1e1e1e; /* Тёмно-серый фон */
+    border-left: 1px solid #333; /* Тёмная граница */
+}
+
+.stage h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.stage-preview {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stage-preview img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    background-color: #0d47a1; /* Тёмно-синий */
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch 4.0</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка с логотипом и кнопками навигации -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Scratch 4.0 Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Community</a></li>
+            </ul>
+        </nav>
+        <div class="user-profile">
+            <img src="user-avatar.png" alt="User Avatar">
+            <span>Pushok_cat_600</span>
+        </div>
+    </header>
+
+    <!-- Основная часть интерфейса -->
+    <main>
+        <!-- Панель инструментов -->
+        <aside class="sidebar">
+            <section class="blocks">
+                <h2>Blocks</h2>
+                <div class="block-category">Motion</div>
+                <div class="block-category">Looks</div>
+                <div class="block-category">Sound</div>
+                <div class="block-category">Events</div>
+                <!-- Добавляем новые категории -->
+                <div class="block-category">AI</div>
+                <div class="block-category">3D Graphics</div>
+            </section>
+            <section class="sprites">
+                <h2>Sprites</h2>
+                <div class="sprite-item">
+                    <img src="cat.png" alt="Cat Sprite"> Cat
+                </div>
+                <div class="sprite-item">
+                    <img src="dog.png" alt="Dog Sprite"> Dog
+                </div>
+                <!-- Больше спрайтов -->
+            </section>
+        </aside>
+
+        <!-- Рабочая область -->
+        <section class="workspace">
+            <h2>Workspace</h2>
+            <!-- Здесь будут располагаться блоки кода -->
+            <div class="code-area">
+                <!-- Пример блока кода -->
+                <div class="code-block">
+                    <div class="block motion" draggable="true">
+                        Move 10 steps
+                    </div>
+                    <div class="block looks" draggable="true">
+                        Change color
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Панель спрайтов -->
+        <section class="stage">
+            <h2>Stage</h2>
+            <div class="stage-preview">
+                <img src="stage-background.png" alt="Stage Background">
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал с дополнительной информацией -->
+    <footer>
+        <p>&copy; 2024 Scratch 4.0. All rights reserved.</p>
+        <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
